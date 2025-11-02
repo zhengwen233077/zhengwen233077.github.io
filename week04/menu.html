@@ -28,6 +28,7 @@
         .pages {
             display: flex;
             align-content: center;
+            justify-content: flex-end;
             gap: 20px;
             width: 30%;
         }
@@ -72,13 +73,36 @@
             cursor: pointer;
         }
 
+        .menu {
+            display: none;
+        }
+
         #Services {
             color: rgb(255, 89, 0);
         }
 
         @media(max-width:1024px) {
             .pages {
-                font-size: 0px;
+                display: none;
+            }
+
+            .button {
+                display: none;
+            }
+
+            .menu {
+                display: block;
+                justify-self: center;
+            }
+        }
+
+        @media(max-width:648px) {
+            .number {
+                display: none;
+            }
+
+            .menu {
+                display: block;
             }
         }
     </style>
@@ -115,6 +139,9 @@
             </div>
             <div class="button">
                 Content
+            </div>
+            <div class="menu">
+                <img src="images/menu.png" height="30px">
             </div>
         </div>
     </div>
