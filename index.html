@@ -19,78 +19,164 @@
             padding: 0px;
             background-color: rgb(0, 0, 207);
             font-family: "SpaceGrotesk", sans-serif;
+            background-image: url("images/flower.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
         }
 
         .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 20px;
-            padding-left: 1%;
-            padding-right: 1%;
+            padding-left: 5px;
+            padding-right: 10px;
             gap: 30%;
-
+            background-color: rgb(255, 255, 255, 0.5);
         }
-
-        .header div {}
 
         .sociallinks1 {
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
+        }
+
+        .content {
+            margin-top: 20px;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .profilepic {
+            display: block;
+            margin: auto;
+            width: 10%;
+        }
+
+        .profilepic img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .content h1 {
+            color: rgb(255, 255, 255);
+            font-size: 54px;
+        }
+
+        .content h2 {
+            color: white;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            color: white;
+            margin: 0 auto;
+        }
+
+        .content a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .exercises {
+            margin: 60px auto;
+            max-width: 1000px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 30px;
+            padding: 0 auto;
+        }
+
+        .weekbox {
+            background-color: hsl(160, 100%, 75%, 0.5);
+            border-radius: 12px;
+        }
+
+        .weekinner h3 {
+            display: flex;
+            color: white;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding-bottom: 5px;
+            border-bottom: 3px dotted white;
+
+        }
+
+        footer {
+            background-color: rgb(255, 255, 255, 0.5);
+            padding: 25px;
+        }
+
+        .sl {
+            display: block;
+            margin: auto;
+            width: 10%;
+            align-content: center;
+        }
+
+        .sl a img {
+            width: 25px;
+            margin: 0 10px;
+        }
+
+        .sl p {
+            font-size: 10px;
         }
     </style>
     <div>
         <div class="header">
             <div class="logo">
-                <img src="images/logo.png" width="100%">
+                <img src="images/logo.png" width="120px">
             </div>
             <div class="sociallinks1">
                 <div class="insta">
                     <a href="https://www.instagram.com/bebadibeepboo/">
-                        <img src="images/instagram.png" width="10%">
+                        <img src="images/instagram.png" width="50px">
                     </a>
                 </div>
                 <div class="fb">
                     <a href="https://www.facebook.com/">
-                        <img src="images/facebook.png" width="8%">
+                        <img src="images/facebook.png" width="40px">
                     </a>
                 </div>
                 <div class="pinterest">
                     <a href="https://www.pinterest.com/edmundvoltage/">
-                        <img src="images/pinterest.png" width="10%">
+                        <img src="images/pinterest.png" width="30px">
                     </a>
                 </div>
             </div>
         </div>
         <div class="content">
             <div class="profilepic">
-                <!-- <img src="images/profilepic.jpg" width="20%"> -->
+                <img src="images/profilepic.jpg" width="200px">
             </div>
             <div class="name">
-                <p>Zheng Wen</p>
+                <h1>Zheng Wen</h1>
             </div>
             <div class="biodesc">
-                <p>Web Publishing</p>
+                <h2>Web Publishing</h2>
                 <p>Yo! I'm Zheng Wen, a website designer in-training. I love exploring in the world of design. And here
                     are my personal page!</p>
             </div>
             <div class="exercises">
-                <div class="w1">
-                    <div class="week1">
+                <div class="weekbox">
+                    <div class="weekinner">
                         <img src="images/calendar.png" width="5%">
-                        <p>Week 1</p>
+                        <h3>Week 1</h3>
                     </div>
                     <ul>
                         <li><a href="http://127.0.0.1:5500/week%201/exe1.html">Exercise 1</a></li>
                         <li><a href="http://127.0.0.1:5500/week%201/exe2.html">Exercise 2</a></li>
                     </ul>
                 </div>
-                <div class="w2">
-                    <div class="week2">
+                <div class="weekbox">
+                    <div class="weekinner">
                         <img src="images/calendar.png" width="5%">
-                        <p>Week 2</p>
+                        <h3>Week 2</h3>
                     </div>
                     <ul>
                         <li><a href="http://127.0.0.1:5500/week%202/artist.html">Exercise 1</a></li>
@@ -99,10 +185,10 @@
                         <li><a href="http://127.0.0.1:5500/week%202/self-intro.html">Exercise 4</a></li>
                     </ul>
                 </div>
-                <div class="w3">
-                    <div class="week3">
+                <div class="weekbox">
+                    <div class="weekinner">
                         <img src="images/calendar.png" width="5%">
-                        <p>Week 3</p>
+                        <h3>Week 3</h3>
                     </div>
                     <ul>
                         <li><a href="http://127.0.0.1:5500/week03/flexbox1.html">Exercise 1</a></li>
@@ -110,10 +196,10 @@
                         <li><a href="http://127.0.0.1:5500/week03/flexbox3.html">Exercise 3</a></li>
                     </ul>
                 </div>
-                <div class="w4">
-                    <div class="week4">
+                <div class="weekbox">
+                    <div class="weekinner">
                         <img src="images/calendar.png" width="5%">
-                        <p>Week 4</p>
+                        <h3>Week 4</h3>
                     </div>
                     <ul>
                         <li><a href="http://127.0.0.1:5500/week04/menu.html">Exercise 1</a></li>
@@ -122,7 +208,22 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
+
+        <footer>
+            <div class="sl">
+                <a href="https://www.instagram.com/bebadibeepboo/" target="blank">
+                    <img src="images/instagram.png" width="30px">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img src="images/facebook.png" width="30px">
+                </a>
+                <a href="https://www.pinterest.com/edmundvoltage/">
+                    <img src="images/pinterest.png" width="30px">
+                </a>
+                <p>2025 Zheng Wen. All rights reserved.</p>
+            </div>
+        </footer>
+        <!-- <div class="footer">
             <div class="sociallinks2">
                 <div class="insta">
                     <a href="https://www.instagram.com/bebadibeepboo/">
@@ -143,7 +244,7 @@
             <div class="disclaimer">
                 <p>2025 Zheng Wen. All rights reserved.</p>
             </div>
-        </div>
+        </div> -->
     </div>
 
 </body>
