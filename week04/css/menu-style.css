@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: black;
+    margin: 0px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 20px;
+}
+
+.pages {
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    gap: 20px;
+    width: 30%;
+}
+
+.pages_button {
+    width: auto;
+    height: 20px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* 把内容靠右对齐 */
+    gap: 10px;
+    flex: 0 0 auto;
+    /* 不要强制 20% 宽度 */
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.number img {
+    width: 20px;
+    /* 固定像素更稳定 */
+    height: auto;
+}
+
+.number p {
+    margin: 0;
+    /* 移除默认间距 */
+}
+
+.button {
+    background-color: rgb(255, 89, 0);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+}
+
+#Services {
+    color: rgb(255, 89, 0);
+}
+
+@media(max-width:1024px) {
+    .pages {
+        display: none;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        justify-self: center;
+    }
+}
+
+@media(max-width:648px) {
+    .number {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+}
