@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox3</title>
+</head>
+
+<body>
+    <style>
+        @font-face {
+            font-family: "SpaceGrotesk";
+            src: url(font/SpaceGrotesk-VariableFont_wght.ttf)
+        }
+
+        body {
+            font-family: "SpaceGrotesk", sans-serif;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 120px;
+            margin-bottom: 160px;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+        }
+
+        .pages {
+            display: flex;
+            align-items: center;
+            font-size: 46px;
+            gap: 100px;
+        }
+
+        .button {
+            border: 1px solid black;
+            border-radius: 24px;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-top: -30px;
+            padding-bottom: -30px;
+        }
+
+        .button:hover {
+            background-color: #191A23;
+            color: #B9FF66;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+        }
+
+        .header div {
+            width: 50%;
+            padding-right: 200px;
+        }
+
+        .content {
+            margin-top: -100px;
+        }
+
+        .content h1 {
+            font-size: 150px;
+        }
+
+        .content p {
+            font-size: 50px;
+        }
+
+        .book {
+            border: 1px solid #191A23;
+            background-color: #191A23;
+            color: rgb(255, 255, 255);
+            border-radius: 24px;
+            padding-left: 280px;
+        }
+
+        .book:hover {
+            background-color: #B9FF66;
+            color: #191A23;
+        }
+
+        .logotypes {
+            display: flex;
+            align-items: center;
+        }
+
+        .logotypes div {
+            width: 20%;
+            padding: 80px;
+        }
+
+        .amazon {
+            filter: grayscale(100%)
+        }
+
+        .amazon:hover {
+            filter: grayscale(0%);
+        }
+
+        .hubspot {
+            filter: grayscale(100%);
+        }
+
+        .hubspot:hover {
+            filter: grayscale(0%);
+        }
+
+        .zoom {
+            filter: grayscale(100%);
+        }
+
+        .zoom:hover {
+            filter: grayscale(0%);
+        }
+    </style>
+
+    <div class="navbar">
+        <div class="positivus">
+            <img src="flex3.img/Positivus.png" alt="positivus logo" width="220%">
+        </div>
+        <div class="pages">
+            <p>About us</p>
+            <p>Services</p>
+            <p>Use Cases</p>
+            <p>Pricing</p>
+            <p>Blog</p>
+            <div class="button">
+                <p>Request a quote</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="content">
+            <h1>Navigating the digital landscape for success</h1>
+            <p>Our digital marketing agency helps businesses grow and succeed online through a range of services
+                including SEO, PPC, social media marketing, and creation.</p>
+            <div class="book">
+                <p>Book a consultation</p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="flex3.img/Illustration.png" alt="illustration" width="115%">
+        </div>
+    </div>
+
+    <div class="logotypes">
+        <div class="amazon">
+            <img src="flex3.img/amazon.png" alt="amazon logo" width="100%">
+        </div>
+        <div class="dribbble">
+            <img src="flex3.img/dribbble.png" alt="dribbble logo" width="100%">
+        </div>
+        <div class="hubspot">
+            <img src="flex3.img/hubspot.png" alt="hubspot logo" width="100%">
+        </div>
+        <div class="notion">
+            <img src="flex3.img/notion.png" alt="notion logo" width="100%">
+        </div>
+        <div class="zoom">
+            <img src="flex3.img/zoom.png" alt="zoom logo" width="100%">
+        </div>
+    </div>
+</body>
+
+</html>
