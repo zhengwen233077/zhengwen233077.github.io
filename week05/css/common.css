@@ -1,0 +1,89 @@
+/* main.css */
+@import url(home.css);
+@import url(usecase.css);
+
+@font-face {
+    font-family: "SpaceGrotesk";
+    src: url(font/SpaceGrotesk-VariableFont_wght.ttf)
+}
+
+body {
+    font-family: "SpaceGrotesk", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* === Navigation Bar === */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #ffffff;
+    margin: 0px 100px;
+}
+
+.navbar img {
+    height: 50px;
+    width: auto;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    padding: 20 40px;
+}
+
+.menu a:hover {
+    background-color: #b9ff66;
+    border-radius: 6px;
+}
+
+.hamburger {
+    display: none;
+}
+
+#quote-button {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 15px 30px;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 16px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+#quote-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* === Mobile Display === */
+@media screen and (max-width:648px) {
+    .navbar {
+        margin: 0 10px;
+        padding: 0px;
+    }
+
+    .navbar img {
+        height: 40px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}

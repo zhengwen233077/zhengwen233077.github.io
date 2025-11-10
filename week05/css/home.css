@@ -5,62 +5,22 @@
 
 body {
     font-family: "SpaceGrotesk", sans-serif;
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 120px;
-    margin-bottom: 160px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-}
-
-.pages {
-    display: flex;
-    align-items: center;
-    font-size: 46px;
-    gap: 100px;
-}
-
-.button {
-    border: 1px solid black;
-    border-radius: 24px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: -30px;
-    padding-bottom: -30px;
-}
-
-.button:hover {
-    background-color: #191A23;
-    color: #B9FF66;
+    margin: 0px;
+    padding: 0px;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-content: center;
+    /* margin-left: auto;
+    margin-right: auto; */
+    padding: 40px 100px;
+    gap: 100px;
 }
 
 .header div {
     width: 50%;
-    padding-right: 200px;
-}
-
-.content {
-    margin-top: -100px;
-}
-
-.content h1 {
-    font-size: 150px;
-}
-
-.content p {
-    font-size: 50px;
 }
 
 .book {
@@ -68,7 +28,11 @@ body {
     background-color: #191A23;
     color: rgb(255, 255, 255);
     border-radius: 24px;
-    padding-left: 280px;
+    /* padding-left: 280px; */
+}
+
+.book p {
+    text-align: center;
 }
 
 .book:hover {
@@ -79,33 +43,56 @@ body {
 .logotypes {
     display: flex;
     align-items: center;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
 }
 
 .logotypes div {
-    width: 20%;
-    padding: 80px;
+    width: 16.66%;
 }
 
-.amazon {
-    filter: grayscale(100%)
-}
-
-.amazon:hover {
-    filter: grayscale(0%);
-}
-
-.hubspot {
+.brandlogo {
     filter: grayscale(100%);
 }
 
-.hubspot:hover {
-    filter: grayscale(0%);
+.brandlogo:hover {
+    filter: none;
 }
 
-.zoom {
-    filter: grayscale(100%);
-}
+/* === Mobile Display === */
+@media screen and (max-width:648px) {
+    /* .image {
+        display: none;
+    } */
 
-.zoom:hover {
-    filter: grayscale(0%);
+    .header {
+        display: block;
+        padding: 0 20px;
+    }
+
+    .header div {
+        width: 100%;
+    }
+
+    .content {
+        display: block;
+        margin: 5 auto;
+    }
+
+    .content h1 {
+        font-size: 38px;
+    }
+
+    .logotypes {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5px;
+    }
+
+    .logotypes div {
+        width: 33%;
+    }
+
 }
