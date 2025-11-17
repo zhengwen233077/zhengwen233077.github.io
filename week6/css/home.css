@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "SpaceGrotesk";
+    src: url(font/SpaceGrotesk-VariableFont_wght.ttf)
+}
+
+body {
+    font-family: "SpaceGrotesk", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    /* margin-left: auto;
+    margin-right: auto; */
+    padding: 40px 100px;
+    gap: 100px;
+}
+
+.header div {
+    width: 50%;
+}
+
+.book {
+    border: 1px solid #191A23;
+    background-color: #191A23;
+    color: rgb(255, 255, 255);
+    border-radius: 24px;
+    /* padding-left: 280px; */
+}
+
+.book p {
+    text-align: center;
+}
+
+.book:hover {
+    background-color: #B9FF66;
+    color: #191A23;
+}
+
+.logotypes {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.logotypes div {
+    width: 16.66%;
+}
+
+.brandlogo {
+    filter: grayscale(100%);
+}
+
+.brandlogo:hover {
+    filter: none;
+}
+
+/* === Mobile Display === */
+@media screen and (max-width:648px) {
+    /* .image {
+        display: none;
+    } */
+
+    .header {
+        display: block;
+        padding: 0 20px;
+    }
+
+    .header div {
+        width: 100%;
+    }
+
+    .content {
+        display: block;
+        margin: 5 auto;
+    }
+
+    .content h1 {
+        font-size: 38px;
+    }
+
+    .logotypes {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5px;
+    }
+
+    .logotypes div {
+        width: 33%;
+    }
+
+}
