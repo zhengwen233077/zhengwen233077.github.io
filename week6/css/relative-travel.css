@@ -131,3 +131,9 @@ body {
     color: #777;
     margin-top: 10px;
 }
+
+@media(max-width:1024px) {}
+
+@media(max-width:816px) {}
+
+@media(max-width:648px) {}
