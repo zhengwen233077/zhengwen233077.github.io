@@ -1,0 +1,133 @@
+/* general */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-container {
+    /* position: relative; */
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 50%; */
+    gap: 200px;
+}
+
+.travelcard {
+    width: 380px;
+    height: 400px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 40px -10px 80px rgba(0, 140, 254, 0.249);
+    /* overflow: hidden; */
+}
+
+.travelcard {
+    padding: 10px;
+}
+
+.greece {
+    border-radius: 20px;
+}
+
+.title {
+    position: relative;
+}
+
+.title h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.title p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #777;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    color: #555;
+    filter: grayscale(100%);
+}
+
+/* first */
+.smallcard {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    left: 180px;
+    top: 0px;
+    background: #fff;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0px 3px 10px 0px #bfbfbf;
+    padding: 10px;
+}
+
+.smallcard img {
+    border-radius: 50%;
+}
+
+#percent {
+    color: rgb(162, 75, 255);
+}
+
+/* second */
+.smallcard2 {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    left: 180px;
+    top: 0px;
+    background: #fff;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0px 3px 10px 0px #bfbfbf;
+    padding: 10px;
+}
+
+.smallcard2 img {
+    border-radius: 50%;
+}
+
+#percent2 {
+    color: rgb(162, 75, 255);
+}
+
+/* general */
+.smallcontent p {
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+.smallcontent h1 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.smallcontent h2 {
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+.smallcontent div {
+    margin: 0px;
+    border: 2px solid rgb(162, 75, 255);
+    border-radius: 8px;
+    width: 40%;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+}
