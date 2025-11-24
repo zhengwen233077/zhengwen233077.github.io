@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form>
+        <div class="name">
+            <input type="text" id="fname" placeholder="First Name*" required>
+            <input type="text" id="lname" placeholder="Last Name*" required>
+        </div>
+
+        <br>
+
+        <div class="personal">
+            <input type="date" id="dob" placeholder="Date of Birth*" required>
+            <input type="email" id="email" placeholder="E-mail Address*" required>
+        </div>
+
+        <br>
+
+        <div class="personal">
+            <input type="url" id="home" placeholder="Homepage URL*">
+            <div class="favcolour">
+                <label for="fname">Favourite Colour :</label>
+                <select name="color" id="color">
+                    <option value="violet">Violet</option>
+                    <option value="scarlet">Scarlet</option>
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                </select>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="bio">
+            <textarea id="bio" placeholder="Bio*" rows="3" cols="100%"></textarea>
+        </div>
+
+        <br>
+        <br>
+        <div class="submit">
+            <input type="submit" value="All Set!">
+        </div>
+    </form>
+</body>
+
+</html>

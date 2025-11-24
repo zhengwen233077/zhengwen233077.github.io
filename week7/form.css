@@ -1,0 +1,10 @@
+body {
+    max-width: 400px;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+}
