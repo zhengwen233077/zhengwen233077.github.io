@@ -1,5 +1,5 @@
 body {
-    max-width: 400px;
+    max-width: 500px;
     margin: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -7,4 +7,76 @@ body {
 form div {
     display: flex;
     justify-content: space-between;
+}
+
+input[type=text],
+select {
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 18px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0px 2px 2px #a2b0ff;
+}
+
+.name {
+    gap: 15px;
+}
+
+input[type=date],
+select {
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 18px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0px 2px 2px #a2b0ff;
+}
+
+input[type=email],
+select {
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 18px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0px 2px 2px #a2b0ff;
+}
+
+input[type=url],
+select {
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 18px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0px 2px 2px #a2b0ff;
+}
+
+.personal {
+    gap: 15px;
+}
+
+.personal div {
+    align-items: center;
+    width: 100%;
+}
+
+textarea {
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 18px;
+    padding: 10px;
+    box-shadow: 0px 2px 2px #a2b0ff;
+}
+
+input[type=submit] {
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 18px;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(4, 0, 111);
+    color: white;
+    box-shadow: 0px 2px 2px #a2b0ff;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(7, 0, 214);
+    color: white;
+    box-shadow: 0px 2px 2px #a2b0ff;
 }
