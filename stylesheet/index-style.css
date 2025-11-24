@@ -157,6 +157,15 @@ footer {
         padding: 10px;
     }
 
+    .weekbox a {
+        color: #ffffff;
+    }
+
+    .weekbox a:hover {
+        text-decoration: underline;
+        color: rgb(62, 0, 144);
+    }
+
     .weekinner {
         padding: 20px;
     }
